@@ -17,7 +17,8 @@ process.on('exit', (code) => {
 });
 
 process.on('SIGINT', () => {
- console.log('Señal de interrupcion recibida generalmente un (ctrl-c)'); process.exit(0);
+ console.log('Señal de interrupcion recibida generalmente un (ctrl-c)'); 
+ process.exit(0);
 });
 
 process.stdin.on('data', (data) => {
